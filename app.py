@@ -7,7 +7,7 @@ import pickle
 # TO LOAD THE MODEL AND THE SCALER!
 app = Flask(__name__)
 loan_model = pickle.load(open('Resources/RFCmodel.pkl', 'rb'))
-# loan_scaler = pickle.load(open('Resources/scaler.pkl','rb'))
+loan_scaler = pickle.load(open('Resources/scaler.pkl','rb'))
 
 @app.route('/')
 def home():
@@ -19,10 +19,10 @@ def predict():
     int_features = [int(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
     print (final_features) 
-    # scaled_features = loan_scaler.transform(final_features)
-    prediction = loan_model.predict(final_features)
+    scaled_features = loan_scaler.transform(final_features)
+    prediction = loan_model.predict(scaled_features)
     print(prediction)
-    classes = np.array(["loan can be fully paid", "you may not be able to pay off the loan"])
+    classes = np.array(["you may not be able to pay off the loan","loan can be fully paid"])
 
     output = classes[prediction][0]
 
