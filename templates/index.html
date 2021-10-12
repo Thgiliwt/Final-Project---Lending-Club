@@ -131,15 +131,18 @@
               <div class="panel-body"> -->
                 <form action ="{{ url_for('predict')}}" method = "post">
                     <div class = 'cal_input'>
+                    <label for="loan_amnt" >loan_amnt	:  </label>
                     <input type = "text" name = "loan_amnt" placeholder = "loan_amnt" required = "required" />
                     </div>
                     <div class = 'cal_input'>
+                      <label for="int_rate" >int_rate:  </label>
                       <input type = "text" name = "int_rate" placeholder = "int_rate" required = "required" />
                     </div>
                     <div class = 'cal_input'>
-                      <!-- <input type = "text" name = "emp_length" placeholder = "emp_length" required = "required" /> -->
-                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="select1">
-                        <option selected>emp_length</option>
+                      <label for="emp_length" >emp_length:  </label>
+                      <select id="select1" name="emp_length", placeholder="emp_length", required="required">
+                      
+                        <!-- <option selected>emp_length</option> -->
                         <option value="0">less than 1 year</option>
                         <option value="1">1 year</option>
                         <option value="2">2 years</option>
@@ -154,13 +157,12 @@
                       </select>
                     </div>
                     <div class = 'cal_input'>
+                      <label for="annual_inc" >annual_inc:  </label>
                       <input type = "text" name = "annual_inc" placeholder = "annual_inc" required = "required" />
                     </div>
                     <div class = 'cal_input'>
-                      <!-- <input type = "text" name = "home_ownership" placeholder = "home_ownership" required = "required" /> -->
-                                           
-                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="select2">
-                        <option selected>home_ownership</option>
+                      <label for="home_ownership" >home_ownership:  </label>
+                      <select id="select2" name="home_ownership", placeholder="home_ownership", required="required">
                         <option value="0">Anyother</option>
                         <option value="1">Mortgage</option>
                         <option value="2">Rent</option>
@@ -169,8 +171,8 @@
                     </div>
                     <div class = 'cal_input'>
                       <!-- <input type = "text" name = "purpose" placeholder = "purpose" required = "required" /> -->
-                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="select3">
-                        <option selected>purpose</option>
+                      <label for="purpose" >purpose  </label>
+                      <select id="select3" name="purpose", placeholder="purpose", required="required">
                         <option value="0">car</option>
                         <option value="1">credit_card</option>
                         <option value="2">debt_consolidation</option>
@@ -190,8 +192,8 @@
                     <div class = 'cal_input'>
                       <!-- <input type = "text" name = "term" placeholder = "term" required = "required" /> -->
                                            
-                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="select4">
-                        <option selected>term</option>
+                      <label for="term" >term  </label>
+                      <select id="select4" name="term", placeholder="term", required="required">
                         <option value="0">36 months</option>
                         <option value="1">60 months</option>
                       </select>
@@ -201,7 +203,7 @@
                 </form>
               <!-- </div>
             </div> -->
-            <h2 class="u-text u-text-2">Your Result:</h2>
+            {{prediction_text}}
       </div>
 
   
