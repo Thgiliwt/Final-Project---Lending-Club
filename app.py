@@ -18,10 +18,10 @@ def predict():
     #For rendering results on HTML 
     int_features = [int(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
-    print (final_features) 
+    # print (final_features) 
     # scaled_features = loan_scaler.transform(final_features)
-    prediction = loan_model.predict(scaled_features)
-    print(prediction)
+    prediction = loan_model.predict(final_features)
+    # print(prediction)
     classes = np.array(["you may not be able to pay off the loan","loan can be fully paid"])
 
     output = classes[prediction][0]
