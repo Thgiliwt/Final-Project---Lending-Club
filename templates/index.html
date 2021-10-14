@@ -31,7 +31,7 @@
   </head>
   <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-clearfix u-header u-header" id="sec-6e11"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="662" data-image-height="178">
-          <img src="images/ScreenShot2021-10-08at6.29.56pm.png" class="u-logo-image u-logo-image-1">
+          <img src="{{ url_for('static',filename='IMG/logo.png') }}" class="u-logo-image u-logo-image-1">
         </a>
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
@@ -75,7 +75,9 @@
               </div>
             </div>
             <div class="u-container-style u-image u-layout-cell u-right-cell u-shape-rectangle u-size-34 u-image-1" data-image-width="1405" data-image-height="1080">
-              <div class="u-container-layout u-container-layout-2"></div>
+              <div class="u-container-layout u-container-layout-2">
+                <img src="{{ url_for('static',filename='IMG/err.jpg') }}" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -89,28 +91,28 @@
           <div class="u-repeater u-repeater-1">
             <div class="u-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-1">
               <div class="u-container-layout u-similar-container u-container-layout-1">
-                <img src="images/3.jpg" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="715" data-image-height="700">
+                <img src="{{ url_for('static',filename='IMG/3.jpg') }}" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="715" data-image-height="700">
                 <h4 class="u-text u-text-default u-text-palette-1-base u-text-3"> Define Problem</h4>
                 <p class="u-text u-text-palette-1-dark-2 u-text-4">Using Machine learning process to analysis your financial situation</p>
               </div>
             </div>
             <div class="u-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle u-video-cover u-white u-list-item-2">
               <div class="u-container-layout u-similar-container u-container-layout-2">
-                <img src="images/4.jpg" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="715" data-image-height="700">
+                <img src="{{ url_for('static',filename='IMG/4.jpg') }}" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="715" data-image-height="700">
                 <h4 class="u-text u-text-default u-text-palette-1-base u-text-5">Contact Customer </h4>
                 <p class="u-text u-text-palette-1-dark-2 u-text-6">Plan a specific consultant to discuss the loan plan.</p>
               </div>
             </div>
             <div class="u-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle u-video-cover u-white u-list-item-3">
               <div class="u-container-layout u-similar-container u-container-layout-3">
-                <img src="images/dd.jpg" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-3" data-image-width="715" data-image-height="700">
+                <img src="{{ url_for('static',filename='IMG/dd.jpg') }}" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-3" data-image-width="715" data-image-height="700">
                 <h4 class="u-text u-text-default u-text-palette-1-base u-text-7"> Analysis Plan</h4>
                 <p class="u-text u-text-palette-1-dark-2 u-text-8">Analysis the loan plan to fit bank requirements.</p>
               </div>
             </div>
             <div class="u-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle u-video-cover u-white u-list-item-4">
               <div class="u-container-layout u-similar-container u-container-layout-4">
-                <img src="images/1.jpg" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-4" data-image-width="715" data-image-height="700">
+                <img src="{{ url_for('static',filename='IMG/1.jpg') }}" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-4" data-image-width="715" data-image-height="700">
                 <h4 class="u-text u-text-default u-text-palette-1-base u-text-9">Happy Customers</h4>
                 <p class="u-text u-text-palette-1-dark-2 u-text-10">Help customer to purchase their dream home or car, start a new life.</p>
               </div>
@@ -218,7 +220,7 @@
           <div class="u-repeater u-repeater-1">
             <div class="u-container-style u-list-item u-repeater-item u-white u-list-item-1">
               <div class="u-container-layout u-similar-container u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-xl u-container-layout-1">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="150" data-image-height="150" src="images/2.png">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="150" data-image-height="150" src="{{ url_for('static',filename='IMG/2.png') }}" alt="">
                 <div class="u-align-center u-container-style u-group u-white u-group-1">
                   <div class="u-container-layout u-container-layout-2">
                     <h4 class="u-text u-text-2">Echo Yu</h4>
@@ -229,7 +231,7 @@
             </div>
             <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-2">
               <div class="u-container-layout u-similar-container u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-xl u-container-layout-3">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="150" data-image-height="150" src="images/3.png">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="150" data-image-height="150" src="{{ url_for('static',filename='IMG/3.png') }}" alt="">
                 <div class="u-align-center u-container-style u-group u-white u-group-2">
                   <div class="u-container-layout u-container-layout-4">
                     <h4 class="u-text u-text-4">Matt Wang</h4>
@@ -240,7 +242,7 @@
             </div>
             <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
               <div class="u-container-layout u-similar-container u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-xl u-container-layout-5">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="150" data-image-height="150" src="images/4.png">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="150" data-image-height="150" src="{{ url_for('static',filename='IMG/4.png') }}" alt="">
                 <div class="u-align-center u-container-style u-group u-white u-group-3">
                   <div class="u-container-layout u-container-layout-6">
                     <h4 class="u-text u-text-6"> Rachel Zhang</h4>
