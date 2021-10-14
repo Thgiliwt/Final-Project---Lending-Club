@@ -36,7 +36,7 @@ def predict():
 
     output = classes[prediction][0]
 
-    return render_template('index.html', prediction_text='Results: {}'.format(output))
+    return render_template('index.html', prediction_text='Results: {}'.format(output), scrollToAnchor = 'your_tag_id')
     
 
 if __name__ == "__main__":

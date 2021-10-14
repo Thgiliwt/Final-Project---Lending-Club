@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="{{ url_for('static',filename='CSS/Home.css') }}" media="screen">
     <script class="u-script" type="text/javascript" src="{{ url_for('static',filename='JS/jquery.js') }}" defer=""></script>
     <script class="u-script" type="text/javascript" src="{{ url_for('static',filename='JS/nicepage.js') }}" defer=""></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.location.hash = '#{{ scrollToAnchor }}';
+    });
+  </script>
     <meta name="generator" content="Nicepage 3.27.0, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Oswald:200,300,400,500,600,700">
@@ -122,6 +127,7 @@
         </div>
       </div>
     </section>
+    <a id = "your_tag_id"> </a>
     <section class="u-align-center u-clearfix u-grey-5 u-section-3" id="carousel_e831">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-align-center u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-white u-group-1">
