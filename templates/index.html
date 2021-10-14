@@ -67,6 +67,7 @@
         <div class="u-layout">
           <div class="u-layout-row">
             <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-26 u-white u-layout-cell-1">
+              
               <div class="u-container-layout u-container-layout-1">
                 <h5 class="u-custom-font u-font-pt-sans u-text u-text-palette-5-dark-2 u-text-1">about company</h5>
                 <h1 class="u-custom-font u-font-lato u-text u-text-palette-5-dark-2 u-text-2">loan<br>Consulting
@@ -136,10 +137,12 @@
                     <label for="loan_amnt" >loan_amnt	:  </label>
                     <input type = "text" name = "loan_amnt" placeholder = "loan_amnt" required = "required" />
                     </div>
+                    <br>
                     <div class = 'cal_input'>
                       <label for="int_rate" >int_rate:  </label>
                       <input type = "text" name = "int_rate" placeholder = "int_rate" required = "required" />
                     </div>
+                    <br>
                     <div class = 'cal_input'>
                       <label for="emp_length" >emp_length:  </label>
                       <select id="select1" name="emp_length", placeholder="emp_length", required="required">
@@ -158,10 +161,12 @@
                         <option value="10">equal or more than 10 years</option>
                       </select>
                     </div>
+                    <br>
                     <div class = 'cal_input'>
                       <label for="annual_inc" >annual_inc:  </label>
                       <input type = "text" name = "annual_inc" placeholder = "annual_inc" required = "required" />
                     </div>
+                    <br>
                     <div class = 'cal_input'>
                       <label for="home_ownership" >home_ownership:  </label>
                       <select id="select2" name="home_ownership", placeholder="home_ownership", required="required">
@@ -171,6 +176,7 @@
                         <option value="3">Own</option>
                       </select>
                     </div>
+                    <br>
                     <div class = 'cal_input'>
                       <!-- <input type = "text" name = "purpose" placeholder = "purpose" required = "required" /> -->
                       <label for="purpose" >purpose  </label>
@@ -191,6 +197,7 @@
                        
                       </select>
                     </div>
+                    <br>
                     <div class = 'cal_input'>
                       <!-- <input type = "text" name = "term" placeholder = "term" required = "required" /> -->
                                            
@@ -200,15 +207,15 @@
                         <option value="1">60 months</option>
                       </select>
                     </div>
-
+                    <br>
                     <button id="filter-btn" type="submit" class="btn btn-default" style="background-color: #008CBA; border-radius: 6px;font-size: 20px;color: white;border: none;">Click to Calculate</button>
                 </form>
               <!-- </div>
             </div> -->
+            <br>
+            <br>
             {{prediction_text}}
       </div>
-
-  
           </div>
         </div>
       </div>
