@@ -32,11 +32,11 @@ def predict():
     # scaled_features = loan_scaler.transform(final_features)
     prediction = loan_model.predict(final_features)
     # print(prediction)
-    classes = np.array(["you may not be able to pay off the loan","loan can be fully paid"])
+    classes = np.array(["You may not be able to pay off the loan","Loan can be fully paid"])
 
     output = classes[prediction][0]
 
-    return render_template('index.html', prediction_text='The predicted result is: {}'.format(output))
+    return render_template('index.html', prediction_text='Results: {}'.format(output))
     
 
 if __name__ == "__main__":
